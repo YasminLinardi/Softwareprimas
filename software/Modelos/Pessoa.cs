@@ -1,5 +1,5 @@
-namespace software;
-
+namespace Modelos
+{
 public class Pessoa
 {
     string Nome;
@@ -7,7 +7,7 @@ public class Pessoa
     string CPF;
     string Email;
     string Endereço;
-    Int Id; //int64 serve para ter mais bits
+    int Id; 
     
     public void SetNome (string n)
 {
@@ -60,5 +60,5 @@ public string GetEndereço ()
     return Endereço;
 }
 
-
+}
 }
