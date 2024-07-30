@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.Login"
+             BackgroundColor="Pink">
+
+    <Grid VerticalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="10" HorizontalOptions="Center">
+                <Label Text="Login" FontSize="24" HorizontalOptions="Center" />
+            </Frame>
+            
+            <Entry x:Name ="usernameEntry" Placeholder="Nome do usuário" Margin="20,40,20,20" />
+
+            <Button Text="Confirme" HorizontalOptions="Center" VerticalOptions="Center" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
+

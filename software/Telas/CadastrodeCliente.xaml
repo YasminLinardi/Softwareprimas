@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.CadastrodeCliente"
+             BackgroundColor="#FFC0CB"
+             Title="Cadastre">
+
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="10" VerticalOptions="Center">
+            <Label Text="Cadastre:" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   TextColor="Black"/>
+                   
+            <Entry x:Name="NomeEntry" Placeholder="Nome:" />
+
+            <Entry x:Name="DataNascimentoEntry" Placeholder="Data de nascimento: DD/MM/AAAA" />
+
+            <Entry x:Name="CPFEntry" Placeholder="CPF:" />
+
+            <Entry x:Name="NumeroEntry" Placeholder="Número:" />
+
+            <Entry x:Name="EnderecoEntry" Placeholder="Endereço:" />
+
+            <Entry x:Name="EmailEntry" Placeholder="Email:" />
+
+            <Button Text="Confirme seus dados" 
+                    Clicked="OnConfirmButtonClicked"
+                    BackgroundColor="#D3D3D3" 
+                    TextColor="Black"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

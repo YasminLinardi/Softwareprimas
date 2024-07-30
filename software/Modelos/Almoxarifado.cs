@@ -42,7 +42,7 @@ namespace Modelos
 
         public void SetmateriaisEsgotados (string me)
             {
-                MateriaisEsgtados = me;
+                MateriaisEsgotados = me;
             }
 
         public string GetMateriasEsgostados ()

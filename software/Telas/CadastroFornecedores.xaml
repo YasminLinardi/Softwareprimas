@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.CadastroFornecedores">
+             
+    <ContentPage.Content>
+        <Grid BackgroundColor="Pink">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" BackgroundColor="Black" Padding="10">
+                <Image Source="user_icon.png" HeightRequest="40" WidthRequest="40"/>
+                <Label Text="Nome do usuário" VerticalOptions="Center" TextColor="White" FontSize="Medium"/>
+            </StackLayout>
+            <Grid Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Cliente" Clicked="OnClienteClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="Fornecedores" Clicked="OnFornecedoresClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="0" Grid.Column="1"/>
+                <Button Text="Matéria prima" Clicked="OnMateriaPrimaClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="Produtos" Clicked="OnProdutosClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="Funcionários" Clicked="OnFuncionariosClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="Vendas" Clicked="OnVendasClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="Cargos" Clicked="OnCargosClicked" 
+                        Style="{StaticResource DiamondButtonStyle}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
