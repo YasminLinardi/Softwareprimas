@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.CadastrodeFuncionarios"
+             BackgroundColor="#FFB6C1">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Cadastro de funcionários:" 
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+            <Entry x:Name="NomeEntry"
+                   Placeholder="Nome"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Entry x:Name="DataNascimentoEntry"
+                   Placeholder="Data de nascimento: DD/MM/AAAA"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Entry x:Name="CPFEntry"
+                   Placeholder="CPF"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Entry x:Name="NumeroEntry"
+                   Placeholder="Número"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Entry x:Name="EnderecoEntry"
+                   Placeholder="Endereço"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Picker x:Name="CargoPicker"
+                    Title="Cargo"
+                    TextColor="Black"
+                    BackgroundColor="White">
+                <!-- Adicione os itens do Picker aqui -->
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Gerente</x:String>
+                        <x:String>Desenvolvedor</x:String>
+                        <x:String>Designer</x:String>
+                        <x:String>Analista</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button Text="Confirme"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    Clicked="OnConfirmButtonClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

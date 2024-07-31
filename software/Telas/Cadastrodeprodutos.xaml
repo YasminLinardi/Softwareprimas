@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.CadastrodeProdutos"
+             BackgroundColor="#FFB6C1">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Cadastro de produtos:" 
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+            <Entry x:Name="NomeEntry"
+                   Placeholder="Nome"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Entry x:Name="ValorEntry"
+                   Placeholder="Valor"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   BackgroundColor="White"/>
+            <Button Text="Confirme"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    Clicked="OnConfirmButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

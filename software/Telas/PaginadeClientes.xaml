@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.PaginadeClientes"
+             Title="Clientes"
+             BackgroundColor="Pink">
+    <StackLayout Padding="10">
+        <Label Text="Clientes"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+        <CollectionView x:Name="ClientesCollectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,Auto,Auto">
+                        <Label Text="{Binding Nome}" VerticalOptions="Center" />
+                        <Button Text="🖊️"
+                                Clicked="OnEditButtonClicked"
+                                Grid.Column="1" />
+                        <Button Text="🗑️"
+                                Clicked="OnDeleteButtonClicked"
+                                Grid.Column="2" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="+" Clicked="OnAddButtonClicked" VerticalOptions="End" HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
