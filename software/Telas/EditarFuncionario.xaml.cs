@@ -1,23 +1,59 @@
 using Microsoft.Maui.Controls;
+using System.Collections.ObjectModel;
 
 namespace software
 {
     public partial class EditarFuncionario : ContentPage
     {
-        private Employee _employee;
+        public ObservableCollection<Employee> Employees { get; set; }
 
-        public EditEmployeePage(Employee employee)
+        public EmployeesPage()
         {
             InitializeComponent();
 
-            _employee = employee;
-            BindingContext = _employee;
+            Employees = new ObservableCollection<Employee>
+            {
+                new Employee { Name = "Funcionário" },
+                new Employee { Name = "Funcionário" },
+                // Adicione mais funcionários conforme necessário
+            };
+
+            EmployeesListView.ItemsSource = Employees;
         }
 
-        private void OnSaveButtonClicked(object sender, EventArgs e)
+        private void OnEditButtonClicked(object sender, EventArgs e)
         {
-            // Volta para a página anterior após salvar
-            Navigation.PopAsync();
+            var button = sender as Button;
+            var employee = button?.BindingContext as Employee;
+
+            if (employee != null)
+            {
+                // Navegue para a página de edição de funcionários
+                Navigation.PushAsync(new EditEmployeePage(employee));
+            }
+        }
+
+        private void OnDeleteButtonClicked(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            var employee = button?.BindingContext as Employee;
+
+            if (employee != null)
+            {
+                Employees.Remove(employee);
+            }
+        }
+
+        private void OnAddButtonClicked(object sender, EventArgs e)
+        {
+            // Adicione a lógica para adicionar um novo funcionário
+            Employees.Add(new Employee { Name = "Novo Funcionário" });
         }
     }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+    }
 }
+

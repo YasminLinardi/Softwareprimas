@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.EditarFuncionario"
+             BackgroundColor="#FFB6C1">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Funcionários" 
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+            <ListView x:Name="EmployeesListView"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"
+                                         Padding="10"
+                                         Spacing="10">
+                                <Label Text="{Binding Name}"
+                                       FontSize="Medium"
+                                       VerticalOptions="Center"
+                                       TextColor="Black"/>
+                                <Button Text="📝"
+                                        BackgroundColor="White"
+                                        Clicked="OnEditButtonClicked"/>
+                                <Button Text="🗑️"
+                                        BackgroundColor="White"
+                                        Clicked="OnDeleteButtonClicked"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="+" 
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    FontSize="Large"
+                    Clicked="OnAddButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
