@@ -4,7 +4,7 @@ namespace software
 {
     public partial class CadastrodeCargo : ContentPage
     {
-        public CadastroCargosPage()
+        public CadastrodeCargo()
         {
             InitializeComponent();
         }

@@ -7,7 +7,7 @@ namespace software
     {
         public ObservableCollection<CartItem> CartItems { get; set; }
 
-        public CartPage()
+        public Carrinho()
         {
             InitializeComponent();
             CartItems = new ObservableCollection<CartItem>();

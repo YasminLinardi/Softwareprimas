@@ -1,9 +1,10 @@
 using Microsoft.Maui.Controls;
 
 namespace software
+{
     public partial class Cadastrodeprodutos : ContentPage
     {
-        public ProductRegistrationPage()
+        public Cadastrodeprodutos()
         {
             InitializeComponent();
         }

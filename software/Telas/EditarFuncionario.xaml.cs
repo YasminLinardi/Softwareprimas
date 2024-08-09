@@ -7,7 +7,7 @@ namespace software
     {
         public ObservableCollection<Employee> Employees { get; set; }
 
-        public EmployeesPage()
+        public EditarFuncionario()
         {
             InitializeComponent();
 

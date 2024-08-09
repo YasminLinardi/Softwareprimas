@@ -6,7 +6,7 @@ namespace software
     {
         public ObservableCollection<Cliente> Clientes { get; set; }
 
-        public MainPage()
+        public PaginadeClientes()
         {
             InitializeComponent();
             Clientes = new ObservableCollection<Cliente>

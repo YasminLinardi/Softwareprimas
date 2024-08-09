@@ -11,7 +11,7 @@ namespace software
 
         private async void OnClienteClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ClientePage());
+            await Navigation.PushAsync(new PaginadeClientesit ());
         }
 
         private async void OnFornecedoresClicked(object sender, EventArgs e)

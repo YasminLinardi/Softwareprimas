@@ -5,7 +5,7 @@ namespace software
 {
     public partial class Produtos : ContentPage
     {
-        public MainPage()
+        public Produtos()
         {
             InitializeComponent();
         }

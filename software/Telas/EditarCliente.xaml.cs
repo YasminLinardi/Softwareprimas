@@ -4,7 +4,7 @@ namespace software
     {
         private Cliente _cliente;
 
-        public EditarClientePage(Cliente cliente)
+        public EditarCliente(Cliente cliente)
         {
             InitializeComponent();
             _cliente = cliente;

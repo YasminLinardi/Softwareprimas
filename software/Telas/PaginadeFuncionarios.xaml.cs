@@ -5,16 +5,16 @@ namespace software
 {
     public partial class PaginadeFuncionarios : ContentPage
     {
-        public ObservableCollection<Employee> Employees { get; set; }
+        public ObservableCollection<Funcionario> Funcionario { get; set; }
 
-        public EmployeesPage()
+        public PaginadeFuncionarios()
         {
             InitializeComponent();
 
-            Employees = new ObservableCollection<Employee>
+            Funcionario = new ObservableCollection<Funcionario>
             {
-                new Employee { Name = "Funcionário" },
-                new Employee { Name = "Funcionário" },
+                new Funcionario { Name = "Funcionário" },
+                new Funcionario { Name = "Funcionário" },
                 // Adicione mais funcionários conforme necessário
             };
 
@@ -24,34 +24,34 @@ namespace software
         private void OnEditButtonClicked(object sender, EventArgs e)
         {
             var button = sender as Button;
-            var employee = button?.BindingContext as Employee;
+            var Funcionario = button?.BindingContext as Funcionario;
 
-            if (employee != null)
+            if (Funcionario != null)
             {
                 // Navegue para a página de edição de funcionários
-                Navigation.PushAsync(new EditEmployeePage(employee));
+                Navigation.PushAsync(new PaginadeFuncionarios(Funcionario));
             }
         }
 
         private void OnDeleteButtonClicked(object sender, EventArgs e)
         {
             var button = sender as Button;
-            var employee = button?.BindingContext as Employee;
+            var Funcionario = button?.BindingContext as Funcionario;
 
-            if (employee != null)
+            if (Funcionario != null)
             {
-                Employees.Remove(employee);
+                Funcionario.Remove(Funcionario);
             }
         }
 
         private void OnAddButtonClicked(object sender, EventArgs e)
         {
             // Adicione a lógica para adicionar um novo funcionário
-            Employees.Add(new Employee { Name = "Novo Funcionário" });
+            Funcionario.Add(new Funcionario { Name = "Novo Funcionário" });
         }
     }
 
-    public class Employee
+    public class Funcionario
     {
         public string Name { get; set; }
     }
