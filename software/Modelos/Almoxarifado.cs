@@ -1,63 +1,18 @@
+using LiteDB;
+
 namespace Modelos
 {
         public class Almoxarifado
     {
-            string Quantidades;
-            string EntradadeMateriais;
-            string SaidadeMateriais;
-            string MateriaisEsgotados;
-            string NumerodaOperação;
-            int Id;
+            string Quantidades { get; set; }
+            string EntradadeMateriais { get; set; }
+            string SaidadeMateriais { get; set; }
+            string MateriaisEsgotados { get; set; }
+            string NumerodaOperação { get; set; }
 
-        public void SetQuantidades (string q)
-            {
-                Quantidades = q;
-            }
-        
-        public string GetQuantidades ()
-            {
-                return Quantidades;
-            }
+            [BsonId]
+            int Id { get; set; }
 
-        public void SetEntradadeMateriais (string em)
-            {
-                EntradadeMateriais = em;
-            
-            }
-
-        public string GetEntradadeMateriais ()
-            {
-                return EntradadeMateriais;
-            }
-
-        public void SetSaidadeMateriais (string sm)
-            {
-                SaidadeMateriais = sm;
-            }
-
-        public string GetSaidadeMaterias ()
-            {
-                return SaidadeMateriais;
-            }
-
-        public void SetmateriaisEsgotados (string me)
-            {
-                MateriaisEsgotados = me;
-            }
-
-        public string GetMateriasEsgostados ()
-            {
-                return MateriaisEsgotados;
-            }
-
-        public void SetNumerodaOperação (string no)
-            {
-                NumerodaOperação = no;
-            }
-
-        public string GetNumerodaOperação ()
-            {
-                return NumerodaOperação;
-            }
+       
     }
 }

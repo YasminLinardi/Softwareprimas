@@ -1,42 +1,18 @@
 using System.Reflection.Metadata;
+using LiteDB;
 
 namespace Modelos
 {
         public class Estoque
     {
-            string  Quantidade;
-            string Cliente; 
-            string NumerodeOperação;
-            int Id;
+            string  Quantidade { get; set; }
+            string Cliente { get; set; }
+            string NumerodeOperação { get; set; }
 
-            public void SetQuantidade (string q)
-                {
-                    Quantidade = q;
-                }
-            public string GetQuantidade ()
-                {
-                    return Quantidade;
-                }
-            
-            public void SetCliente (string c)
-                {
-                    Cliente = c;
-                }
+            [BsonId]
+            int Id { get; set; }
 
-            public string GetCliente ()
-                {
-                    return Cliente;
-                }
-
-            public void SetNumerodeOperação (string no)
-                {
-                    NumerodeOperação = no;
-                }
-            
-            public string GetNumerodaOperação ()
-                {
-                    return NumerodeOperação;
-                }
-            
+    
+        
     }
 }

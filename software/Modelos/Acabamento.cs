@@ -1,41 +1,17 @@
+using LiteDB;
+
 namespace Modelos
 {
         public class Acabamento
     {
-            string Acabamentos;
-            string Aviamentos;
-            string NumerodaOperação;
-            int Id;
+            string Acabamentos { get; set; }
+            string Aviamentos { get; set; }
+            string NumerodaOperação { get; set; }
 
-        public void SetAcabamento (string a)
-            {
-                Acabamentos = a;
-            }
+            [BsonId]
+            int Id { get; set; }
 
-        public string GetAcamanento ()
-            {
-                return Acabamentos;
-            }
-
-        public void SetAviamentos (string av)
-            {
-                Aviamentos = av;
-            }
-
-        public string GetAviamentos ()
-            {
-                return Aviamentos;
-            }
-
-        public void SetNumerodaOperação (string no)
-            {
-                NumerodaOperação = no;
-            }
-
-        public string GetNumerodaOperação ()
-            {
-                return NumerodaOperação;
-            }
-
+        
+        
     }
 }
