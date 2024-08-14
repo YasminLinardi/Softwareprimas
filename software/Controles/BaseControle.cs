@@ -1,5 +1,5 @@
 using LiteDB;
-using LiteDBExample.Modelos;
+using Modelos;
 
 namespace Controles;
 

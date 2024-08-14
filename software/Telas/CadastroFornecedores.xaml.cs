@@ -11,37 +11,37 @@ namespace software
 
         private async void OnClienteClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PaginadeClientesit ());
+            await Navigation.PushAsync(new PaginadeClientes ());
         }
 
         private async void OnFornecedoresClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FornecedoresPage());
+            await Navigation.PushAsync(new PaginadeFornecedor());
         }
 
         private async void OnMateriaPrimaClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MateriaPrimaPage());
+            await Navigation.PushAsync(new PaginadeMateriaPrima());
         }
 
         private async void OnProdutosClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProdutosPage());
+            await Navigation.PushAsync(new PaginadeProdutos());
         }
 
         private async void OnFuncionariosClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FuncionariosPage());
+            await Navigation.PushAsync(new PaginadeFuncionarios());
         }
 
         private async void OnVendasClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new VendasPage());
+            await Navigation.PushAsync(new PaginadeVendas());
         }
 
         private async void OnCargosClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new CargosPage());
+            await Navigation.PushAsync(new PaginadeCargos());
         }
     }
 }

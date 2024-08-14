@@ -1,6 +1,6 @@
 using LiteDB;
 
-namespace Registro
+namespace Modelos
 {
     public class Registro
         {
