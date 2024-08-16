@@ -4,14 +4,11 @@ namespace Controles;
 
 public class ClienteControle : BaseControle
 {
-  //----------------------------------------------------------------------------
 
   public ClienteControle() : base()
   {
     NomeDaTabela = "Clientes";
   }
-
-  //----------------------------------------------------------------------------
 
   public virtual Registro? Ler(int idCliente)
   {
@@ -19,7 +16,6 @@ public class ClienteControle : BaseControle
     return collection.FindOne(d => d.Id == idCliente);
   }
 
-  //----------------------------------------------------------------------------
 
   public virtual List<Cliente>? LerTodos()
   {
@@ -27,7 +23,7 @@ public class ClienteControle : BaseControle
     return new List<Cliente>(tabela.FindAll());
   }
 
-  //----------------------------------------------------------------------------
+
 
   public virtual void Apagar(int idCliente)
   {
@@ -35,7 +31,7 @@ public class ClienteControle : BaseControle
     collection.Delete(idCliente);
   }
 
-  //----------------------------------------------------------------------------
+
 
   public virtual void CriarOuAtualizar(Cliente cliente)
   {
@@ -43,5 +39,4 @@ public class ClienteControle : BaseControle
     collection.Upsert(cliente);
   }
 
-  //----------------------------------------------------------------------------
 }

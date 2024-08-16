@@ -1,5 +1,3 @@
-using Telas;
-
 namespace software
 {
     public partial class Cadastrodeprodutos : ContentPage

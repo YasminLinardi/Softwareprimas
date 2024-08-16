@@ -1,17 +1,18 @@
     using Microsoft.Maui.Controls;
+using Modelos;
 
 namespace software
 {
     public partial class EditarFornecedor : ContentPage
     {
-        private Fornecedor _fornecedor;
+        private Fornecedores fornecedor;
 
         public EditarFornecedor(Fornecedor fornecedor)
         {
             InitializeComponent();
 
-            _fornecedor = fornecedor;
-            BindingContext = _fornecedor;
+            fornecedor = Fornecedores;
+            BindingContext = Fornecedores;
         }
 
         private void OnSaveButtonClicked(object sender, EventArgs e)
@@ -26,8 +27,4 @@ namespace software
         }
     }
 
-    public class Fornecedor
-    {
-        public string Name { get; set; }
-    }
 }

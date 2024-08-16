@@ -1,4 +1,4 @@
-using Telas;
+using System.Collections.ObjectModel;
 
 namespace software
 {
@@ -44,6 +44,16 @@ namespace software
         {
             // Adicionar novo cliente (implemente a lógica conforme necessário)
             await DisplayAlert("Adicionar Cliente", "Adicionar novo cliente", "OK");
+        }
+    }
+
+    internal class EditarClientePage : Page
+    {
+        private Cliente cliente;
+
+        public EditarClientePage(Cliente cliente)
+        {
+            this.cliente = cliente;
         }
     }
 

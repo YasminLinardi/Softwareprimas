@@ -1,4 +1,5 @@
-using Telas;
+using System.Collections.ObjectModel;
+using Modelos;
 
 namespace software
 {
@@ -9,14 +10,13 @@ namespace software
         public PaginadeFornecedor()
         {
             InitializeComponent();
-            Clientes = new ObservableCollection<Fornecedor>
+            Fornecedor = new ObservableCollection<Fornecedor>
             {
-                new Cliente { Nome = "Fornecedor" },
-                new Cliente { Nome = "Fornecedor" },
-                new Cliente { Nome = "Fornecedor" },
+                new Fornecedor { Nome = "Fornecedor" },
+                new Fornecedor { Nome = "Fornecedor" },
+                new Fornecedor { Nome = "Fornecedor" },
                 // Adicione mais Fornecedor conforme necessário
             };
-            ClientesCollectionView.ItemsSource = Fornecedores;
         }
 
         private async void OnEditButtonClicked(object sender, EventArgs e)
@@ -47,8 +47,7 @@ namespace software
         }
     }
 
-    public class Fornecedor
+    internal class Fornecedor
     {
-        public string Nome { get; set; }
     }
 }
