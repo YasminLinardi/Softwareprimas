@@ -21,7 +21,7 @@
             <Entry x:Name="NumeroEntry" Placeholder="Número:" />
 
             <Entry x:Name="EnderecoEntry" Placeholder="Endereço:" />
-
+ 
             <Entry x:Name="EmailEntry" Placeholder="Email:" />
 
             <Button Text="Confirme seus dados" 

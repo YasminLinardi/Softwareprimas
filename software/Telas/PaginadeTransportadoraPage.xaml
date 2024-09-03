@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="software.TransportadoraPage"
+             Shell.NavBarIsVisible="False"
+             Title="Transportadoras">
+     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ImageButton Source="back.png"
+                     Clicked="Back"
+                     Grid.Row="0"
+                     Grid.Column="0"
+                     HorizontalOptions="Start"/>
+
+        <Label Text="TRANSPORTADORAS"
+               Grid.Row="0"
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               FontSize="20"/>
+
+
+        <SearchBar Placeholder="Nome da Transportadora"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="FillAndExpand"/>
+        <Button Text="+" 
+                Clicked="Criar"
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="#FFFF99"
+                BorderColor="Black"
+                BorderWidth="1"
+                FontSize="22"
+                HorizontalOptions="End"
+                Padding="3"
+                TextColor="Black"/>
+
+        <ListView x:Name="ListaTransportadora"
+                  Grid.Row="2"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  HasUnevenRows="True"
+                  ItemSelected="QuandoSelecionarUmItemNaLista"
+                  HorizontalOptions="Fill"
+                  VerticalOptions="Fill">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout Padding="15"
+                                             BackgroundColor="White">
+                            <HorizontalStackLayout>
+                                <Label Text="{Binding Nome}"
+                                       FontSize="15"/>
+                                <Label Text="{Binding Sobrenome}"
+                                       FontSize="15"
+                                       Margin="10,0,0,0"/>
+                            </HorizontalStackLayout>
+                            <Label Text="{Binding Telefone}"
+                                   FontSize="15"/>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </Grid>
+</ContentPage>
