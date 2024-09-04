@@ -2,10 +2,10 @@ using Modelos;
 
 namespace software
 {
-    public partial class TransportadoraPage : ContentPage
+    public partial class PaginadeTransportadora : ContentPage
     {
         Controles.TransportadoraControle transportadoraControle = new Controles.TransportadoraControle();
-        public TransportadoraPage()
+        public PaginadeTransportadora()
         {
             InitializeComponent();
             ListaTransportadora.ItemsSource = transportadoraControle.LerTodos();
