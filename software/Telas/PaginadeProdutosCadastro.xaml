@@ -23,7 +23,7 @@
                              WidthRequest="50"
                              HeightRequest="50"
                              HorizontalOptions="Start" />
-                <Label Text="PRODUTOS"
+                <Label Text="Produtos"
                        Grid.Row="0"
                        Grid.Column="1"
                        FontSize="20"
@@ -54,7 +54,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Label Text="PRODUTO"
+            <Label Text="Produtos"
                     BackgroundColor="#98FB98"
                     Grid.Row="0"
                     FontAttributes="Bold"

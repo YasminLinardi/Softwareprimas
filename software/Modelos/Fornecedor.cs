@@ -3,7 +3,7 @@ using LiteDB;
 namespace Modelos
 {
 
-        public class Fornecedores ; pessoa
+        public class Fornecedores ; Pessoa
     {
         string Nome { get; set; }
         string Telefone { get; set; }

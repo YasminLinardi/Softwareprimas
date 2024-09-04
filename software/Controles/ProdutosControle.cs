@@ -3,7 +3,7 @@ using Modelos;
 
 namespace Controles;
 
-public class ProdutosControle : ControleBase
+public class ProdutosControle : BaseControle
 {
   //----------------------------------------------------------------------------
 
@@ -45,4 +45,11 @@ public class ProdutosControle : ControleBase
   }
 
   //----------------------------------------------------------------------------
-}s
+}
+
+internal class Produtos
+{
+    public object Nome { get; internal set; }
+}
+
+s

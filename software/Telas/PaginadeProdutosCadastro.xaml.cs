@@ -1,21 +1,22 @@
+using Controles;
 using Modelos;
 
 namespace software
 {
-    public partial class ProdutoPage : ContentPage
+    public partial class PaginadeProdutos : ContentPage
     {
-        public Produtos produto { get; set; }
+        public Produtos Produtos { get; set; }
         Controles.ProdutosControle produtoControle = new Controles.ProdutosControle();
-        public ProdutoPage()
+        public PaginadeProdutos()
         {
             InitializeComponent();
-            ListaProduto.ItemsSource = produtoControle.LerTodos();
+            ListaProduto.ItemsSource = ProdutosControle.LerTodos();
         }
 
        void QuandoSelecionarUmItem(object sender, SelectedItemChangedEventArgs e)
         {
-            var page = new ProdutoCadastroPage();
-            page.produto = e.SelectedItem as Produtos;
+            var page = new CadastrodeProdutos();
+            page.Produtos = e.SelectedItem as Produtos;
             Application.Current.MainPage = page;
         }
 
@@ -26,7 +27,7 @@ namespace software
 
         private void Criar(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new ProdutoCadastroPage();
+            Application.Current.MainPage = new Cadastrodeprodutos();
         }
     }
 }
