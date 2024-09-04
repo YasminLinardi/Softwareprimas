@@ -3,7 +3,7 @@ using Modelos;
 
 namespace software
 {
-    public partial class ProdutoPage : ContentPage
+    public partial class PaginadeProdutos : ContentPage
     {
         public Produtos Produto { get; set; }
         Controles.ProdutosControle produtoControle = new Controles.ProdutosControle();
