@@ -1,18 +1,18 @@
 using Microsoft.Maui.Controls;
 
-namespace fluxograma
+namespace software
 {
-    public partial class ComprasPage : ContentPage
+    public partial class PaginadeCompras : ContentPage
     {
 
-        public ComprasPage()
+        public PaginadeCompras()
         {
             InitializeComponent();  
         }
 
           private void Volta(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new EstoquePage();
+            Application.Current.MainPage = new PaginadeEstoque();
         }
        
     }
