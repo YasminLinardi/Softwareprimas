@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace software
 {
-    public partial class EstoquePage : ContentPage
+    public partial class PaginadeEstoque : ContentPage
     {
-        public EstoquePage()
+        public PaginadeEstoque()
         {
             InitializeComponent();
         }
@@ -16,7 +16,7 @@ namespace software
 
         private void Compra(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new ComprasPage();
+            Application.Current.MainPage = new PaginadeCompras();
         }
     }
 }
