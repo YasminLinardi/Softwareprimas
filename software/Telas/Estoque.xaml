@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="fluxograma.EstoquePage">
+             x:Class="fluxograma.Estoque">
 
     <ContentPage.Content>
         <Grid>
@@ -39,7 +39,7 @@
                     TextColor="Black"
                     Margin="10"
                     FontSize="20"
-                    BackgroundColor="#B2EBF2"
+                    BackgroundColor="#FC8EAC"
                     CornerRadius="15"/>
             <Button Text="ENVIOS"
                     Grid.Row="3"
@@ -47,7 +47,7 @@
                     TextColor="Black"
                     Margin="10"
                     FontSize="20"
-                    BackgroundColor="#B2EBF2"
+                    BackgroundColor="#FC8EAC"
                     CornerRadius="15"/>
             <Button Text="COMPRAS"
                     Grid.Row="5"
@@ -56,7 +56,7 @@
                     TextColor="Black"
                     Margin="10"
                     FontSize="20"
-                    BackgroundColor="#B2EBF2"
+                    BackgroundColor="#FC8EAC"
                     CornerRadius="15"/>
 
         </Grid>
