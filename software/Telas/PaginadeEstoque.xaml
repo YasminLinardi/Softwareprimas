@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="software.EstoquePage">
+             x:Class="software.PaginadeEstoque">
 
     <ContentPage.Content>
         <Grid>
@@ -25,7 +25,7 @@
                          Clicked="Volta"
                          HorizontalOptions="Start"/>
 
-            <Label Text="ESTOQUE"
+            <Label Text="Estoque"
                    Grid.Row="0"
                    Grid.ColumnSpan="2"
                    HorizontalOptions="Center"
@@ -33,21 +33,21 @@
 
             <!-- Main Content Area -->
 
-            <Button Text="ESTOQUE"
+            <Button Text="Estoque"
                     Grid.Row="1"
                     Grid.ColumnSpan="2"
                     TextColor="Black"
                     Margin="10"
                     FontSize="20"
-                    BackgroundColor="#B2EBF2"
+                    BackgroundColor="#FC8EAC"
                     CornerRadius="15"/>
-            <Button Text="ENVIOS"
+            <Button Text="Envios"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
                     TextColor="Black"
                     Margin="10"
                     FontSize="20"
-                    BackgroundColor="#B2EBF2"
+                    BackgroundColor="#FC8EAC"
                     CornerRadius="15"/>
             <Button Text="COMPRAS"
                     Grid.Row="5"
@@ -56,7 +56,7 @@
                     TextColor="Black"
                     Margin="10"
                     FontSize="20"
-                    BackgroundColor="#B2EBF2"
+                    BackgroundColor="#FC8EAC"
                     CornerRadius="15"/>
 
         </Grid>
