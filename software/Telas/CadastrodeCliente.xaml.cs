@@ -3,13 +3,13 @@ using Microsoft.Maui.Controls;
 
 namespace software
 {
-    public partial class CadastroClientePage : ContentPage
+    public partial class CadastrodeCliente : ContentPage
   {
    public Cliente cliente { get; set; }
   Controles.ClienteControle clienteControle = new Controles.ClienteControle();
 
 
-	public CadastroClientePage()
+	public CadastrodeCliente()
 	{
 		InitializeComponent();
 	}
@@ -17,7 +17,7 @@ namespace software
 
   void VoltarClicked(object sender, EventArgs e)
   {
-    Application.Current.MainPage = new ListaClientesPage();
+    Application.Current.MainPage = new ListadeClientes();
   }
 
   protected override void OnAppearing()
