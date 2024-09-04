@@ -18,7 +18,7 @@
                              WidthRequest="50"
                              HeightRequest="50"
                              HorizontalOptions="Start" />
-                <Label Text="COMPRAS" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+                <Label Text="Compras" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
             </StackLayout>
 
             <!-- Search Bar and Add Button -->
