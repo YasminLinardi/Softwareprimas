@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="software.MateriaPrimaCadastroPage"
+             x:Class="software.CadastrodeMateriaPrima"
              Shell.NavBarIsVisible="False"
              Title="Matéria Prima">
 <ContentPage.Content>
@@ -34,8 +34,6 @@
                 <Label Text="Nome:" />
                 <Entry x:Name="NomeEntry" />
                 <Label Text="Unidade:" />
-                <Picker x:Name="pickerUnidade"
-                    ItemDisplayBinding="{Binding Nome}" />
             </StackLayout>
 
             <Grid>
@@ -52,7 +50,7 @@
                     Grid.Row="0"
                     TextColor="Black"
                     Grid.Column="0"
-                    BackgroundColor="#D1A3DA"
+                    BackgroundColor="#FC8EAC"
                     Margin="20" />
 
             <Button Text="apagar"
@@ -60,7 +58,7 @@
                     Grid.Row="0"
                     TextColor="Black"
                     Grid.Column="1"
-                    BackgroundColor="#D1A3DA"
+                    BackgroundColor="#FC8EAC"
                     Margin="20" />
             </Grid>
         </StackLayout>
