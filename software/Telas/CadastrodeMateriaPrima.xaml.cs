@@ -4,7 +4,7 @@ using Modelos;
 
 namespace software
 {
-    public partial class CadatrodeMateriaPrima : ContentPage
+    public partial class CadastrodeMateriaPrima : ContentPage
     {
         public Materia materia { get; set; }
         Controles.MateriaControle MateriaControle = new Controles.MateriaControle();
